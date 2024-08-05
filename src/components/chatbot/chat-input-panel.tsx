@@ -175,7 +175,7 @@ export default function ChatInputPanel(props: ChatInputPanelProps) {
         firstTime = true;
       }
       // const wsUrl = 'wss://ngdpdxffy0.execute-api.us-east-1.amazonaws.com/test/';      
-      const TEST_URL = 'wss://caoyb4x42c.execute-api.us-east-1.amazonaws.com/test/';
+      const wsUrl = appContext.wsEndpoint+"/"
 
       // Get a JWT token for the API to authenticate on
       const TOKEN = (await Auth.currentSession()).getAccessToken().getJwtToken()  
